@@ -1,0 +1,23 @@
+{% extends "mu_site\base.html" %}
+{% load static %}
+
+{% block title %}You registered successfully!{% endblock title %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static "mu_site/styles/registration-confirmation.css" %}">
+{% endblock styles %}
+
+{% block main_heading %}
+    Thanks for signing up!
+{% endblock main_heading %}
+
+{% block content %}
+<section id="confirmation">
+    <h2>You registered successfully!</h2>
+    <p>Thanks for signing up - see you at the meetup !</p>
+</section>
+
+<section id="continue">
+    <p><a href="/mu_site" class="btn">Feel free to browse the other meetups!</a></p>
+</section>
+{% endblock content %}
